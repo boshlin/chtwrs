@@ -251,7 +251,7 @@ def parse_text(text, username, message_id):
         elif corovan_enabled and text.find(' /go') != -1:
             action_list.append(orders['corovan'])
 
-        elif text.find('Битва семи замков через') != -1:
+        elif text.find('Battle of the seven castles') != -1:
             hero_message_id = message_id
             m = re.search('Battle of the seven castles in(?: ([0-9]+)h){0,1}(?: ([0-9]+)){0,1}', text)
             if not m.group(1):
