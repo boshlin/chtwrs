@@ -259,7 +259,7 @@ def parse_text(text, username, message_id):
             if not m.group(1):
                 if m.group(2) and int(m.group(2)) <= 59:
                     state = re.search('State:\n(.*)', text).group(1)
-                    if auto_def_enabled and time() - current_order['time'] > 3600 and 'Rest' in state:
+                    if auto_def_enabled and time() - current_order['time'] > 3600 and '🛌Rest' in state:
                         if donate_enabled:
                             gold = int(re.search('💰([0-9]+)', text).group(1))
                             inv = re.search('🎒Bag: ([0-9]+)/([0-9]+)', text)
