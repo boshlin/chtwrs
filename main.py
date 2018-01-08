@@ -252,8 +252,10 @@ def parse_text(text, username, message_id):
             action_list.append(orders['corovan'])
 
         elif text.find('Battle of the seven castles') != -1:
+            log('ebalrot')
             hero_message_id = message_id
             m = re.search('Battle of the seven castles in(?: ([0-9]+)h){0,1}(?: ([0-9]+)){0,1}', text)
+            log('flag:' + str(m))
             if not m.group(1):
                 if m.group(2) and int(m.group(2)) <= 59:
                     state = re.search('State:\n(.*)', text).group(1)
