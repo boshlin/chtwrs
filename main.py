@@ -638,6 +638,7 @@ def parse_text(text, username, message_id):
                 castle_name = flags[re.search('(.{2}).*, .+ Castle', text).group(1)]
                 log('Замок: '+castle_name)
                 castle = orders[castle_name]
+            log('ebalrot2')
             class_available = bool(re.search('Определись со специализацией', text))
             hero_message_id = message_id
             endurance = int(re.search('Stamina: (\d+)', text).group(1))
