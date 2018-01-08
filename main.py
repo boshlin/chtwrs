@@ -635,6 +635,7 @@ def parse_text(text, username, message_id):
         elif text.find('Battle of the seven castles in') != -1:
             log('ebalrot')
             if castle_name is None:
+                log('Find casle name')
                 castle_name = flags[re.search('(.{2}).*, .+ Castle', text).group(1)]
                 log('Замок: '+castle_name)
                 castle = orders[castle_name]
