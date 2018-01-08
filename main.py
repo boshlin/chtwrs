@@ -346,8 +346,8 @@ def parse_text(text, username, message_id):
                 update_order(orders['dragons'])
             elif text.find(orders['eagle']) != -1:
                 update_order(orders['eagle'])
-            # elif text.find(orders['[potato]']) != -1:
-            #     update_order(orders['potato'])
+            elif text.find(orders['potato']) != -1:
+                update_order(orders['potato'])
             elif text.find(orders['shark']) != -1:
                 update_order(orders['shark'])
             elif text.find(orders['deer']) != -1:
