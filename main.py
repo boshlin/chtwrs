@@ -22,7 +22,7 @@ admin_username = ''
 order_usernames = ''
 
 # имя замка
-castle_name = 'moonlight'
+castle_name = 'moon'
 
 captcha_bot = 'ChatWarsCaptchaBot'
 
