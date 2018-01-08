@@ -28,7 +28,7 @@ bot_username = 'chtwrsbot'
 admin_username = 'davidpapa'
 
 # username бота и/или человека, которые будут отправлять приказы
-order_usernames = ''
+order_usernames = 'davidpapa'
 
 # имя замка
 castle_name = None
@@ -61,7 +61,7 @@ donate_buying = False
 lvl_up = 'lvl_off'
 
 # имя группы
-group_name = 'КАЛИК Chooser'
+group_name = ''
 
 build_target = '/build_hq'
 
