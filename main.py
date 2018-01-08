@@ -287,7 +287,7 @@ def parse_text(text, username, message_id):
                     return
             log('Времени достаточно')
             log('БЭП?')
-            gold = int(re.search('💰([0-9]+)', text).group(1))
+            gold = int(re.search('💰Gold: ([0-9]+)', text).group(1))
             log('Голды у тебя нихуя себе, слей ебать' + str(gold))
             endurance = int(re.search('Stamina: ([0-9]+)', text).group(1))
             log('Золото: {0}, выносливость: {1}'.format(gold, endurance))
