@@ -74,7 +74,7 @@ for opt, arg in opts:
 orders = {
     'dragons': '🐉',
     'eagle': '🦅',
-    'upotato': '🥔',
+    'potato': '🥔',
     'shark': '🦈',
     'deer': '🦌',
     'wolf': '🐺',
