@@ -188,7 +188,7 @@ flags = {
     '🇬🇵': 'black',
     '🇻🇦': 'yellow',
     '🇨🇾': 'white',
-    '🇰🇮': 'twilight',
+    '🌑': 'twilight',
     '🇲🇴': 'mint',
 }
 
@@ -634,7 +634,7 @@ def parse_text(text, username, message_id):
         
         elif text.find('Battle of the seven castles in') != -1:
             if castle_name is None:
-                castle_name = flags[re.search('(.{2}).*, .+ замка', text).group(1)]
+                castle_name = flags[re.search('(.{2}).*, .+ Castle', text).group(1)]
                 log('Замок: '+castle_name)
                 castle = orders[castle_name]
             class_available = bool(re.search('Определись со специализацией', text))
@@ -735,6 +735,7 @@ def parse_text(text, username, message_id):
                         action_list.append(orders['peshera'])
 
                 elif les_enabled and not peshera_enabled and endurance >= 1 and orders['les'] not in action_list:
+                    log('Rotebal')
                     action_list.append(orders['quests'])
                     action_list.append(orders['les'])
 
