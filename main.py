@@ -16,10 +16,10 @@ import pytz
 bot_username = 'chtwrsbot'
 
 # ваш username или username человека, который может отправлять запросы этому скрипту
-admin_username = ''
+admin_username = 'davidpapa'
 
 # username бота и/или человека, которые будут отправлять приказы
-order_usernames = ''
+order_usernames = 'davidpapa'
 
 # имя замка
 castle_name = 'moon'
