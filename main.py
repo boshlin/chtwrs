@@ -89,7 +89,7 @@ orders = {
     'hero': '🏅Me',
     'corovan': '/go',
     'peshera': '🕸Cave',
-    'quests': '🗺 Quests',
+    'quests': '🗺Quests',
     'castle_menu': '🏰Castle',
     'lavka': '🏚Shop',
     'snaraga': 'Buy',
