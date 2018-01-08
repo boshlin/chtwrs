@@ -636,6 +636,8 @@ def parse_text(text, username, message_id):
             log('ebalrot')
             if castle_name is None:
                 log('Find casle name')
+                log(text)
+                log('flag:' + str(re.search('(.{2}).*, .+ Castle', text).group(1)))
                 castle_name = flags[re.search('(.{2}).*, .+ Castle', text).group(1)]
                 log('Замок: '+castle_name)
                 castle = orders[castle_name]
