@@ -83,8 +83,8 @@ orders = {
     'les': '🌲Forest',
     'gorni_fort': '⛰Горный форт',
     'gora': '⛰',
-    'cover': '🛡 Defence',
-    'attack': '⚔ Attack',
+    'cover': '🛡Defend',
+    'attack': '⚔Attack',
     'cover_symbol': '🛡',
     'hero': '🏅Me',
     'corovan': '/go',
@@ -121,7 +121,7 @@ arena_attack = ['🗡Head', '🗡Body', '🗡Feet']
 # поменять blue на red, black, white, yellow в зависимости от вашего замка
 castle = orders[castle_name]
 # текущий приказ на атаку/защиту, по умолчанию всегда защита, трогать не нужно
-current_order = {'time': 0, 'order': castle}
+# current_order = {'time': 0, 'order': castle}
 # задаем получателя ответов бота: админ или группа
 if group_name =='':
     pref = '@'
