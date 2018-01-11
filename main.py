@@ -312,7 +312,7 @@ def parse_text(text, username, message_id):
                     arena_running = True
                     action_list.append(orders['castle_menu'])
                     action_list.append('📯Arena')
-                    action_list.append('🔎Fight!')
+                    action_list.append('▶️Fast fight')
                     log('Топаем на арену')
                 else:
                     log('По часам не проходим на арену. Сейчас ' + str(curhour) + ' часов')
